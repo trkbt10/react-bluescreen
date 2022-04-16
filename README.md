@@ -6,7 +6,7 @@ This library displays a blue screen when an error occurs in React.
 
 ## Demo
 
-[https://trkbt10.github.io/react-bluescreen/]()
+[https://trkbt10.github.io/react-bluescreen/](https://trkbt10.github.io/react-bluescreen/)
 
 ## Usage
 
