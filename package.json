@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "webpack serve --config=webpack.config.development.ts --static-public-path=pages",
+    "dev": "webpack serve --config=webpack.config.development.ts --static-public-path=docs",
     "build:page": "webpack --config=webpack.config.development.ts",
     "build": "webpack --config=webpack.config.ts"
   },

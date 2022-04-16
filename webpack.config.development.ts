@@ -12,7 +12,7 @@ export default function () {
     },
     devServer: { allowedHosts: "all" },
     output: {
-      path: path.join(__dirname, "pages"),
+      path: path.join(__dirname, "docs"),
       filename: "bundle.js",
       libraryTarget: "window",
     },
