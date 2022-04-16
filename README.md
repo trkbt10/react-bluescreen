@@ -11,14 +11,10 @@ This library displays a blue screen when an error occurs in React.
 ## Usage
 
 ```jsx
-import { BluescreenErrorBoundary } from "@trkbt10/react-bluescreen";
+import { ErrorBoundary } from "react-bluescreen";
 
 export const App: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
-  return (
-    <BluescreenErrorBoundary variant="windows9x">
-      {children}
-    </BluescreenErrorBoundary>
-  );
+  return <ErrorBoundary variant="windows9x">{children}</ErrorBoundary>;
 };
 ```
 
