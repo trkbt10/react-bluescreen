@@ -1,0 +1,46 @@
+{
+  "name": "react-bluescreen",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "webpack serve --config=webpack.config.development.ts --static-public-path=pages",
+    "build:page": "webpack --config=webpack.config.development.ts",
+    "build": "webpack --config=webpack.config.ts"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "react",
+    "errorboundary",
+    "bluescreen"
+  ],
+  "author": "trkbt10",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16 || ^17 || ^18",
+    "react-dom": "^16 || ^17 || ^18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.5",
+    "@types/react-dom": "^18.0.1",
+    "@types/webpack": "^5.28.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.8",
+    "ts-node": "^10.7.0",
+    "tsc": "^2.0.4",
+    "typescript": "^4.6.3",
+    "vitest": "^0.9.3",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}

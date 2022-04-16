@@ -1,0 +1,46 @@
+.errorViewWindows9x {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+
+  font-family: Fixedsys, "Courier New", "PCMyungjo", Courier, monospace;
+  background: rgb(0, 0, 170);
+  color: #ffffff;
+  font-smooth: never;
+  -moz-font-smooth: none;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.errorViewWindows9x .body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 640px;
+  max-height: 480px;
+  font-size: 1rem;
+  padding: 0 3em;
+}
+.errorViewWindows9x .heading {
+  display: inline-block;
+  font-size: 1em;
+  padding: 0 0.5em;
+  background: rgb(170, 170, 170);
+  color: rgb(0, 0, 170);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0;
+  place-self: center;
+}
+.errorViewWindows9x .body > p {
+  font-weight: 700;
+  margin: 1em 0 0;
+}
