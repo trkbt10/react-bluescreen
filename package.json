@@ -1,18 +1,27 @@
 {
   "name": "react-bluescreen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "scripts": {
-    "dev": "webpack serve --config=webpack.config.development.ts --static-public-path=docs",
-    "build:page": "webpack --config=webpack.config.development.ts",
-    "build": "webpack --config=webpack.config.ts"
+    "dev": "vite --config=vite.doc.config.ts",
+    "build": "vite build && tsc -b"
+  },
+  "main": "./lib/index.cjs",
+  "import": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    "./style.css": "./lib/style.css",
+    ".": {
+      "main": "./lib/index.cjs",
+      "import": "./lib/index.mjs",
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.cjs"
+    }
   },
   "files": [
     "README.md",
-    "dist"
+    "lib"
   ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "keywords": [
     "react",
     "errorboundary",
@@ -25,22 +34,14 @@
     "react-dom": "^16 || ^17 || ^18"
   },
   "devDependencies": {
-    "@types/react": "^18.0.5",
-    "@types/react-dom": "^18.0.1",
-    "@types/webpack": "^5.28.0",
-    "css-loader": "^6.7.1",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.6.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "style-loader": "^3.3.1",
-    "ts-loader": "^9.2.8",
-    "ts-node": "^10.7.0",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.1",
     "tsc": "^2.0.4",
-    "typescript": "^4.6.3",
-    "vitest": "^0.9.3",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.8.1"
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vitest": "^0.23.1"
   }
 }

@@ -3,11 +3,12 @@ import { ErrorState } from "../interfaces";
 import { ErrorViewMacOS } from "./ErrorViewMacOS";
 import { ErrorViewWindows10 } from "./ErrorViewWindows10";
 import { ErrorViewWindows9x } from "./ErrorViewWindows9x";
+export type ErrorViewVariants = "macOS" | "windows" | "windows9x";
 export const ErrorView: React.FC<
   React.PropsWithChildren<
     {
       onConfirm: () => void;
-      variant?: "macOS" | "windows" | "windows9x" | string;
+      variant?: ErrorViewVariants;
     } & ErrorState
   >
 > = ({ error, errorInfo, onConfirm, variant }) => {

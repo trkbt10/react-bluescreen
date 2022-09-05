@@ -1,8 +1,9 @@
 import { createRoot } from "react-dom/client";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import * as React from "react";
+import { ErrorViewVariants } from "./components/ErrorView";
 const App = () => {
-  const [variant, setVariant] = React.useState<string>("windows9x");
+  const [variant, setVariant] = React.useState<ErrorViewVariants>("windows9x");
   return (
     <ErrorBoundary variant={variant}>
       <h1>React-BlueScreen</h1>
@@ -11,7 +12,7 @@ const App = () => {
       <h2>Theme</h2>
       <select
         name="options"
-        onChange={(e) => setVariant(e.target.value)}
+        onChange={(e) => setVariant(e.target.value as any)}
         value={variant}
       >
         <option value="windows">windows</option>

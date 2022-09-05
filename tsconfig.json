@@ -4,8 +4,9 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "outDir": "./dist",
+    "outDir": "./lib",
     "declaration": true,
+    "declarationMap": true,
     "jsx": "react"
   },
   "include": ["src/**/*", "types.d.ts"]

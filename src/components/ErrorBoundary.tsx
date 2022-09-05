@@ -1,7 +1,9 @@
 import * as React from "react";
 import { ErrorView } from "./ErrorView";
 export class ErrorBoundary extends React.Component<
-  React.PropsWithChildren<{ variant?: string }>
+  React.PropsWithChildren<
+    Pick<React.ComponentProps<typeof ErrorView>, "variant">
+  >
 > {
   readonly state: {
     errorInfo?: React.ErrorInfo;

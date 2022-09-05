@@ -11,6 +11,7 @@ This library displays a blue screen when an error occurs in React.
 ## Usage
 
 ```jsx
+import "react-bluescreen/style.css";
 import { ErrorBoundary } from "react-bluescreen";
 
 export const App: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
